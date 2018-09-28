@@ -12,7 +12,7 @@ public enum TipoCliente {
 		this.descricao = descricao;
 	}
 	
-	public int gedCod() {
+	public int getCod() {
 		return cod;
 	}
 	
@@ -25,7 +25,7 @@ public enum TipoCliente {
 			return null;
 		}
 		for (TipoCliente x : TipoCliente.values()) {
-			if(cod.equals(x.gedCod())) {
+			if(cod.equals(x.getCod())) {
 				return x;
 			}
 		}
